@@ -153,28 +153,36 @@ html body {
   top: -12px;
   right: 2px;
 }
+
 @-webkit-keyframes eye-blink {
   0% {
     transform: scaleY(1);
   }
+
   18% {
     transform: scaleY(1);
   }
+
   20% {
     transform: scaleY(0);
   }
+
   25% {
     transform: scaleY(1);
   }
+
   38% {
     transform: scaleY(1);
   }
+
   40% {
     transform: scaleY(0);
   }
+
   45% {
     transform: scaleY(1);
   }
+
   80% {
     transform: scaleY(1);
   }
@@ -184,24 +192,31 @@ html body {
   0% {
     transform: scaleY(1);
   }
+
   18% {
     transform: scaleY(1);
   }
+
   20% {
     transform: scaleY(0);
   }
+
   25% {
     transform: scaleY(1);
   }
+
   38% {
     transform: scaleY(1);
   }
+
   40% {
     transform: scaleY(0);
   }
+
   45% {
     transform: scaleY(1);
   }
+
   80% {
     transform: scaleY(1);
   }
@@ -211,33 +226,43 @@ html body {
   0% {
     transform: rotate(0) scale(0.98);
   }
+
   10% {
     transform: rotate(0) scale(1.01);
   }
+
   20% {
     transform: rotate(2deg) scale(0.997);
   }
+
   25% {
     transform: rotate(2deg) scale(0.998);
   }
+
   30% {
     transform: rotate(2deg) scale(1.01);
   }
+
   40% {
     transform: rotate(-2deg) scale(0.995);
   }
+
   50% {
     transform: rotate(-2deg) scale(1);
   }
+
   60% {
     transform: rotate(-3deg) scale(0.996);
   }
+
   80% {
     transform: rotate(1deg) scale(1);
   }
+
   90% {
     transform: rotate(1deg) scale(0.997);
   }
+
   100% {
     transform: rotate(0deg) scale(1);
   }
@@ -247,35 +272,46 @@ html body {
   0% {
     transform: rotate(0) scale(0.98);
   }
+
   10% {
     transform: rotate(0) scale(1.01);
   }
+
   20% {
     transform: rotate(2deg) scale(0.997);
   }
+
   25% {
     transform: rotate(2deg) scale(0.998);
   }
+
   30% {
     transform: rotate(2deg) scale(1.01);
   }
+
   40% {
     transform: rotate(-2deg) scale(0.995);
   }
+
   50% {
     transform: rotate(-2deg) scale(1);
   }
+
   60% {
     transform: rotate(-3deg) scale(0.996);
   }
+
   80% {
     transform: rotate(1deg) scale(1);
   }
+
   90% {
     transform: rotate(1deg) scale(0.997);
   }
+
   100% {
     transform: rotate(0deg) scale(1);
   }
 }
+
 /*# sourceMappingURL=index.css.map */

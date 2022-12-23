@@ -9,6 +9,7 @@ html body {
   background: #e0e5ed;
   font-family: "Arial Narrow Bold", sans-serif;
 }
+
 .container {
   width: 350px;
   height: 700px;
@@ -19,6 +20,7 @@ html body {
   display: grid;
   grid-template-rows: 30px 60px;
 }
+
 .container .topbar {
   padding: 0px 20px;
   display: flex;
@@ -26,6 +28,7 @@ html body {
   align-items: center;
   padding-top: 10px;
 }
+
 .container .title {
   margin-top: 20px;
   text-align: center;
@@ -34,6 +37,7 @@ html body {
   font-weight: bold;
   text-shadow: 2px 2px #979191;
 }
+
 .container .calculator {
   display: grid;
   grid-template-columns: repeat(4, 60px);
@@ -42,6 +46,7 @@ html body {
   align-content: end;
   gap: 20px;
 }
+
 .container .calculator .btn {
   outline: none;
   border: none;
@@ -52,10 +57,12 @@ html body {
   background: linear-gradient(145deg, #f0f5fe, #caced5);
   box-shadow: 8px 8px 16px #bec3c9, -8px -8px 16px #ffffff;
 }
+
 .container .calculator .btn:hover {
   background: linear-gradient(145deg, #caced5, #f0f5fe);
   box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff;
 }
+
 .container .calculator .btn_click {
   outline: none;
   border: none;
@@ -66,10 +73,12 @@ html body {
   background: linear-gradient(145deg, #f0f5fe, #caced5);
   box-shadow: 8px 8px 16px #bec3c9, -8px -8px 16px #ffffff;
 }
+
 .container .calculator .btn_click:hover {
   background: linear-gradient(145deg, #caced5, #f0f5fe);
   box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff;
 }
+
 .container .calculator .btn0 {
   width: 140px;
   height: 60px;
@@ -77,13 +86,16 @@ html body {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
 .container .calculator .btn0:hover {
   background: linear-gradient(145deg, #caced5, #f0f5fe);
   box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff;
 }
+
 .container .calculator .btn1 {
   color: #ff9900;
 }
+
 .container .calculator .txt {
   margin-bottom: 20px;
   grid-column-start: 1;

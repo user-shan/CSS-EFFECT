@@ -1,18 +1,22 @@
 * {
   box-sizing: border-box;
 }
+
 &:before {
   box-sizing: border-box;
 }
+
 &:after {
   box-sizing: border-box;
 }
+
 body {
   background: radial-gradient(ellipse at center, #3b3b3b 0%, #1b1b1b 100%);
   color: #e5e5e5;
   font: 16px/1.25 "Crimson Text", sans-serif;
   margin: 0;
 }
+
 #wrapper {
   width: 100vw;
   height: 100vh;
@@ -20,10 +24,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #container {
   width: 900px;
   height: 700px;
 }
+
 .open-book {
   width: 100%;
   height: 100%;
@@ -34,6 +40,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+
   &:before {
     background: linear-gradient(to bottom, #8b4513, #a35015);
     border-radius: 5px;
@@ -45,17 +52,16 @@ body {
     top: -15px;
     z-index: -1;
   }
+
   &:after {
-    background: linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(0, 0, 0, 0.2) 46%,
-      rgba(0, 0, 0, 0.5) 49%,
-      rgba(0, 0, 0, 0.6) 50%,
-      rgba(0, 0, 0, 0.5) 51%,
-      rgba(0, 0, 0, 0.2) 52%,
-      transparent 100%
-    );
+    background: linear-gradient(to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.2) 46%,
+        rgba(0, 0, 0, 0.5) 49%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.5) 51%,
+        rgba(0, 0, 0, 0.2) 52%,
+        transparent 100%);
     bottom: -15px;
     content: "";
     left: 50%;
@@ -65,30 +71,37 @@ body {
     width: 60px;
     z-index: 1;
   }
-  > * {
+
+  >* {
     column-count: 2;
     column-gap: 6em;
     position: relative;
     z-index: 1;
   }
+
   .article {
     padding: 10px;
     flex: 1;
+
     p {
       font-weight: lighter;
       letter-spacing: 1.1px;
     }
   }
+
   .header {
     display: flex;
     justify-content: space-between;
+
     * {
       margin: 0;
     }
+
     div {
       color: #aaa;
       font-size: 12px;
     }
+
     &:before {
       background: #fff;
       border-radius: 25%;
@@ -104,6 +117,7 @@ body {
       right: 50%;
       transform: rotate(-2deg);
     }
+
     &:after {
       background: #fff;
       border-radius: 25%;
@@ -119,28 +133,33 @@ body {
       left: 50%;
       transform: rotate(2deg);
     }
-    > * {
+
+    >* {
       &:last-child {
         text-align: right;
       }
     }
   }
+
   .footer {
     * {
       margin: 0;
     }
+
     #page-numbers {
       list-style: none;
       padding: 0;
       text-align: left;
       color: #aaa;
       font-size: 12px;
-      > div {
+
+      >div {
         &:last-child {
           text-align: right;
         }
       }
     }
+
     &:before {
       background: #fff;
       border-radius: 25%;
@@ -156,6 +175,7 @@ body {
       bottom: -15px;
       transform: rotate(2deg);
     }
+
     &:after {
       background: #fff;
       border-radius: 25%;
@@ -171,7 +191,8 @@ body {
       bottom: -15px;
       transform: rotate(-2deg);
     }
-    > * {
+
+    >* {
       &:last-child {
         text-align: right;
       }

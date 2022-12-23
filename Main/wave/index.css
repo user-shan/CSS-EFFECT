@@ -7,6 +7,7 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .container {
   width: 300px;
   height: 300px;
@@ -17,9 +18,11 @@ html {
   border-radius: 50%;
   position: relative;
 }
+
 .container #canvas {
   position: absolute;
 }
+
 .container .proNum {
   font-size: 48px;
   color: #fff;

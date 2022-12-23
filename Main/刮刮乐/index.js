@@ -20,11 +20,11 @@ function getBrushPos(xRef, yRef) {
   return {
     x: Math.floor(
       ((xRef - canvasRect.left) / (canvasRect.right - canvasRect.left)) *
-        canvas.width
+      canvas.width
     ),
     y: Math.floor(
       ((yRef - canvasRect.top) / (canvasRect.bottom - canvasRect.top)) *
-        canvas.height
+      canvas.height
     ),
   };
 }

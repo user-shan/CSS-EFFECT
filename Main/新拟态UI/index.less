@@ -1,10 +1,10 @@
-html body{
+html body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-.container{
+.container {
   width: 100vw;
   height: 100%;
   min-height: 100vh;
@@ -13,11 +13,13 @@ html body{
   justify-content: center;
   align-items: center;
   background-color: #ebecf0;
-  .first-line{
+
+  .first-line {
     display: flex;
     justify-content: center;
     align-items: center;
-    .Aa{
+
+    .Aa {
       width: 240px;
       height: 240px;
       display: flex;
@@ -26,24 +28,28 @@ html body{
       justify-content: center;
       border-radius: 40px;
       background: #ebecf0;
-      box-shadow:  24px 24px 48px #b3b3b6, 
-                  -24px -24px 48px #ffffff;
-      .text{
+      box-shadow: 24px 24px 48px #b3b3b6,
+        -24px -24px 48px #ffffff;
+
+      .text {
         text-align: center;
         font-size: 144px;
-        background-image:-webkit-linear-gradient(right,#31BFE4,#1858F1); 
-        -webkit-background-clip:text; 
-        -webkit-text-fill-color:transparent; 
+        background-image: -webkit-linear-gradient(right, #31BFE4, #1858F1);
+        --webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
-    .right{
+
+    .right {
       display: flex;
       flex-direction: column;
-      .line1{
+
+      .line1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        .button{
+
+        .button {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -52,14 +58,16 @@ html body{
           margin-right: 80px;
           border-radius: 47px;
           background: #ebecf0;
-          box-shadow:  12px 12px 24px #b3b3b6, -12px -6px 24px #ffffff;
-          .text{
+          box-shadow: 12px 12px 24px #b3b3b6, -12px -6px 24px #ffffff;
+
+          .text {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
           }
         }
-        .arrow{
+
+        .arrow {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -68,25 +76,29 @@ html body{
           margin-right: 80px;
           border-radius: 15px;
           background: #ebecf0;
-          box-shadow:  9px 9px 19px #b3b3b6, 
-                      -9px -9px 19px #ffffff;
-          .iconfont{
+          box-shadow: 9px 9px 19px #b3b3b6,
+            -9px -9px 19px #ffffff;
+
+          .iconfont {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
           }
         }
-        .close{
+
+        .close {
           position: relative;
-          .bg{
+
+          .bg {
             width: 116px;
             height: 61px;
             box-sizing: border-box;
-            border: 6px solid rgba(255,255,255,0.16);
+            border: 6px solid rgba(255, 255, 255, 0.16);
             border-radius: 31px;
-            box-shadow: -30px -30px 60px 0 rgb(255,251,255), 30px 30px 60px 0 rgb(166, 171, 189);
+            box-shadow: -30px -30px 60px 0 rgb(255, 251, 255), 30px 30px 60px 0 rgb(166, 171, 189);
           }
-          .handle{
+
+          .handle {
             position: absolute;
             top: -7px;
             left: -10px;
@@ -96,16 +108,18 @@ html body{
             border-radius: 37.5px;
             background-color: #fff;
             border: 1px solid #DEE1EB;
-            box-shadow: 0 2px 2px 0 rgba(89,98,120,24);
+            box-shadow: 0 2px 2px 0 rgba(89, 98, 120, 24);
           }
         }
       }
-      .line2{
+
+      .line2 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 52px;
-        .input{
+
+        .input {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -114,14 +128,16 @@ html body{
           margin-right: 80px;
           border-radius: 47px;
           background-color: #EBECF0;
-          box-shadow: inset -5px -5px 10px 0 rgb(255,251,255), inset 5px 5px 10px 0 rgb(166, 171, 189);
-          .text{
+          box-shadow: inset -5px -5px 10px 0 rgb(255, 251, 255), inset 5px 5px 10px 0 rgb(166, 171, 189);
+
+          .text {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
           }
         }
-        .pressed{
+
+        .pressed {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -130,15 +146,17 @@ html body{
           margin-right: 80px;
           border-radius: 47px;
           background: linear-gradient(145deg, #fbfdff, #d4d4d8);
-          box-shadow: -10px -10px 20px 0 rgb(255,251,255), 10px 10px 20px 0 rgb(166, 171, 189);
-          .inner{
+          box-shadow: -10px -10px 20px 0 rgb(255, 251, 255), 10px 10px 20px 0 rgb(166, 171, 189);
+
+          .inner {
             width: 31px;
             height: 31px;
             border-radius: 31px;
             border: 5px solid #8A92A5;
           }
         }
-        .unpressed{
+
+        .unpressed {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -147,27 +165,32 @@ html body{
           border-radius: 47px;
           margin-right: 80px;
           box-sizing: border-box;
-          border: 1px solid rgba(255,255,255,0.4);
-          background: linear-gradient(145deg, #d4d4d8, #fbfdff);;
-          box-shadow: inset -5px -5px 20px 0 rgb(255,251,255), inset 5px 5px 20px 0 rgb(166, 171, 189);
-          .inner{
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          background: linear-gradient(145deg, #d4d4d8, #fbfdff);
+          ;
+          box-shadow: inset -5px -5px 20px 0 rgb(255, 251, 255), inset 5px 5px 20px 0 rgb(166, 171, 189);
+
+          .inner {
             width: 33px;
             height: 33px;
             border-radius: 33px;
             background-color: #8A92A5;
           }
         }
-        .open{
+
+        .open {
           position: relative;
-          .bg{
+
+          .bg {
             width: 116px;
             height: 61px;
             box-sizing: border-box;
             border-radius: 31px;
             background-color: #1654F0;
-            box-shadow: -30px -30px 60px 0 rgb(255,251,255), 30px 30px 60px 0 rgb(166, 171, 189);
+            box-shadow: -30px -30px 60px 0 rgb(255, 251, 255), 30px 30px 60px 0 rgb(166, 171, 189);
           }
-          .handle{
+
+          .handle {
             position: absolute;
             top: -7px;
             right: -10px;
@@ -177,23 +200,27 @@ html body{
             border-radius: 37.5px;
             background-color: #fff;
             border: 1px solid #DEE1EB;
-            box-shadow: 0 2px 2px 0 rgba(89,98,120,24);
+            box-shadow: 0 2px 2px 0 rgba(89, 98, 120, 24);
           }
         }
       }
     }
   }
-  .second-line{
+
+  .second-line {
     margin-top: 52px;
     display: flex;
-    .left{
+
+    .left {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      .top{
+
+      .top {
         display: flex;
-        .share{
+
+        .share {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -201,42 +228,49 @@ html body{
           width: 245px;
           height: 94px;
           border-radius: 47px;
-          box-shadow: -10px -10px 20px 0 rgb(255,251,255), 10px 10px 20px 0 rgb(166, 171, 189);
-          .text{
+          box-shadow: -10px -10px 20px 0 rgb(255, 251, 255), 10px 10px 20px 0 rgb(166, 171, 189);
+
+          .text {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
             margin-right: 10px;
           }
-          .iconfont{
+
+          .iconfont {
             color: #6D7587;
             font-size: 36px;
           }
         }
-        .dropdown{
+
+        .dropdown {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 371px;
           height: 94px;
           border-radius: 47px;
-          box-shadow: -10px -10px 20px 0 rgb(255,251,255), 10px 10px 20px 0 rgb(166, 171, 189);
-          .text{
+          box-shadow: -10px -10px 20px 0 rgb(255, 251, 255), 10px 10px 20px 0 rgb(166, 171, 189);
+
+          .text {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
             margin-right: 30px;
           }
-          .iconfont{
+
+          .iconfont {
             color: #6D7587;
             font-size: 36px;
           }
         }
       }
-      .middle{
+
+      .middle {
         display: flex;
         margin-top: 52px;
-        .label{
+
+        .label {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -244,57 +278,66 @@ html body{
           width: 245px;
           height: 94px;
           border-radius: 47px;
-          box-shadow: -10px -10px 20px 0 rgb(255,251,255), 10px 10px 20px 0 rgb(166, 171, 189);
-          .text{
+          box-shadow: -10px -10px 20px 0 rgb(255, 251, 255), 10px 10px 20px 0 rgb(166, 171, 189);
+
+          .text {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
             margin-left: 10px;
           }
-          .iconfont{
+
+          .iconfont {
             color: #6D7587;
             font-size: 36px;
           }
         }
-        .adduser{
+
+        .adduser {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 371px;
           height: 94px;
           border-radius: 47px;
-          box-shadow: -10px -10px 20px 0 rgb(255,251,255), 10px 10px 20px 0 rgb(166, 171, 189);
-          .text{
+          box-shadow: -10px -10px 20px 0 rgb(255, 251, 255), 10px 10px 20px 0 rgb(166, 171, 189);
+
+          .text {
             font-size: 36px;
             font-weight: 200;
             color: #6D7587;
             margin-left: 10px;
           }
-          .iconfont{
+
+          .iconfont {
             color: #6D7587;
             font-size: 36px;
           }
         }
       }
-      .bottom{
+
+      .bottom {
         margin-top: 52px;
         position: relative;
-        .search{
+
+        .search {
           width: 687px;
           height: 94px;
           border-radius: 47px;
           box-sizing: border-box;
-          border: 1px solid rgba(255,255,255,0.4);
-          box-shadow: inset -5px -5px 20px 0 rgb(255,251,255), inset 5px 5px 20px 0 rgb(166, 171, 189);
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          box-shadow: inset -5px -5px 20px 0 rgb(255, 251, 255), inset 5px 5px 20px 0 rgb(166, 171, 189);
           padding-left: 80px;
           font-size: 36px;
           color: #6D7587;
-          &::placeholder{
+
+          &::placeholder {
             font-size: 36px;
             color: #6D7587;
           }
         }
-        .iconfont{
+
+        .iconfont {
           font-size: 36px;
           position: absolute;
           top: 27px;
@@ -303,38 +346,47 @@ html body{
         }
       }
     }
-    .right{
+
+    .right {
       display: flex;
       margin-left: 80px;
       align-items: flex-end;
-      .pillar1{
+
+      .pillar1 {
         height: 268px;
       }
-      .pillar2{
+
+      .pillar2 {
         height: 350px;
       }
-      .pillar3{
+
+      .pillar3 {
         height: 190px;
       }
-      .pillar4{
+
+      .pillar4 {
         height: 388px;
       }
-      .pillar5{
+
+      .pillar5 {
         height: 271px;
       }
-      .pillar5{
+
+      .pillar5 {
         margin-right: 0 !important;
       }
-      .pillar{
+
+      .pillar {
         position: relative;
         background: linear-gradient(145deg, #fbfdff, #d4d4d8);
         box-sizing: border-box;
-        border: 1px solid rgba(255,255,255,0.4);
-        box-shadow: inset -5px -5px 20px 0 rgb(255,251,255), inset 5px 5px 20px 0 rgb(166, 171, 189);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: inset -5px -5px 20px 0 rgb(255, 251, 255), inset 5px 5px 20px 0 rgb(166, 171, 189);
         width: 59px;
         margin-right: 42px;
         border-radius: 30px;
-        .fill{
+
+        .fill {
           border-radius: 30px;
           position: absolute;
           width: 59px;
@@ -342,19 +394,24 @@ html body{
           left: 0;
           bottom: 0;
         }
-        .fill1{
+
+        .fill1 {
           height: 165px;
         }
-        .fill2{
+
+        .fill2 {
           height: 283px;
         }
-        .fill3{
+
+        .fill3 {
           height: 92px;
         }
-        .fill4{
+
+        .fill4 {
           height: 323px;
         }
-        .fill5{
+
+        .fill5 {
           height: 188px;
         }
       }

@@ -1,14 +1,16 @@
-body{
+body {
   background: #74B2C9;
 }
-.box-canvas{
+
+.box-canvas {
   position: relative;
   margin: auto;
   display: block;
   margin-top: 8%;
   margin-bottom: 8%;
   width: 190px;
-  height:600px;
+  height: 600px;
+
   .head {
     position: absolute;
     left: 50px;
@@ -18,7 +20,8 @@ body{
     border-radius: 50%;
     border: 1px solid #F73219;
     overflow: hidden;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       width: 50px;
@@ -27,7 +30,8 @@ body{
       border-radius: 50% 50% 50% 20%;
       bottom: 10px;
     }
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       top: 50%;
@@ -40,13 +44,15 @@ body{
       border-radius: 50%;
     }
   }
+
   .beak {
     position: absolute;
     transform: rotate(-10deg);
     top: 30px;
     height: 30px;
     width: 60px;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       bottom: 0;
@@ -56,6 +62,7 @@ body{
       height: 15px;
       border-radius: 50% 0% 50% 50%;
     }
+
     .beak-top {
       position: absolute;
       right: 0;
@@ -63,7 +70,8 @@ body{
       width: 40px;
       height: 25px;
       border-radius: 50% 30% 50% 50%;
-      &::after{
+
+      &::after {
         content: '';
         position: absolute;
         top: 22px;
@@ -76,6 +84,7 @@ body{
       }
     }
   }
+
   .body {
     position: absolute;
     left: 70px;
@@ -86,7 +95,8 @@ body{
     border-radius: 50% 50% 40% 40%;
     transform: rotate(-25deg);
     border-left: 2px solid #D12B19;
-    &:after{
+
+    &:after {
       content: '';
       position: absolute;
       left: 25px;
@@ -94,16 +104,16 @@ body{
       height: 130px;
       border-left: 2px solid var(--accent-red);
       background: linear-gradient(to bottom,
-      #F73219,
-      #F73219 50%,
-        #F2D207 55%,
-        #F2D207 70%,
-        #0372C3 80%
-      );
+          #F73219,
+          #F73219 50%,
+          #F2D207 55%,
+          #F2D207 70%,
+          #0372C3 80%);
       border-radius: 50% 30% 50% 10%;
       transform: skew(0deg, -20deg) rotate(-10deg);
     }
   }
+
   .tail {
     content: '';
     position: absolute;
@@ -113,37 +123,41 @@ body{
     height: 140px;
     background: blue;
     background: linear-gradient(to right,
-     #0372C3,
-     #0372C3 6px,
-      #F73219 10px,
-      #F73219 16px,
-      #F2D207 20px,
-      #F2D207 26px,
-     #0372C3 30px
-    );
+        #0372C3,
+        #0372C3 6px,
+        #F73219 10px,
+        #F73219 16px,
+        #F2D207 20px,
+        #F2D207 26px,
+        #0372C3 30px);
     transform: rotate(-20deg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
   }
-  .left{
+
+  .left {
     transform: rotate(10deg);
     top: 190px;
     left: 95px;
-    &::after{
+
+    &::after {
       height: 30px;
       top: -20px;
     }
   }
-  .right{
+
+  .right {
     transform: rotate(10deg);
     top: 200px;
     left: 110px;
   }
+
   .leg {
     position: absolute;
     width: 8px;
     height: 35px;
     background: #F2D207;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       left: -10px;
@@ -153,7 +167,8 @@ body{
       background: #F73219;
       clip-path: polygon(20% 100%, 80% 100%, 100% 0, 0 0);
     }
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       top: 40px;
@@ -164,6 +179,7 @@ body{
       box-shadow: 0 -8px 0 #F2D207;
     }
   }
+
   .branch {
     position: absolute;
     top: 232px;

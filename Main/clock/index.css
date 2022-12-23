@@ -2,6 +2,7 @@ html body {
   margin: 0;
   padding: 0;
 }
+
 .containers {
   width: 100vw;
   height: 100vh;
@@ -9,6 +10,7 @@ html body {
   justify-content: center;
   align-items: center;
 }
+
 .containers .left {
   flex: 1;
   height: 100%;
@@ -17,6 +19,7 @@ html body {
   justify-content: center;
   align-items: center;
 }
+
 .containers .left .container {
   border-radius: 50%;
   box-shadow: 12px 12px 14px #18191b, -12px -12px 14px #34373b;
@@ -24,6 +27,7 @@ html body {
   width: 400px;
   height: 400px;
 }
+
 .containers .left .container .clock-container {
   width: 400px;
   height: 400px;
@@ -35,6 +39,7 @@ html body {
   position: absolute;
   animation: Rotate 1s linear infinite;
 }
+
 .containers .left .container .clock-container:before {
   position: absolute;
   content: "";
@@ -44,6 +49,7 @@ html body {
   background: radial-gradient(circle at 50% 0, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0) 70.71%), radial-gradient(circle at 6.7% 75%, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0) 70.71%), radial-gradient(circle at 93.3% 75%, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%) beige;
   filter: blur(5px);
 }
+
 .containers .left .container .clock {
   width: 390px;
   height: 390px;
@@ -57,12 +63,14 @@ html body {
   justify-content: center;
   align-items: center;
 }
+
 .containers .left .container .clock .time {
   font-size: 72px;
   background-color: #7d8cea;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
 }
+
 .containers .left .container .clock .dot {
   width: 10px;
   height: 10px;
@@ -72,6 +80,7 @@ html body {
   right: 60px;
   top: 60px;
 }
+
 .containers .left .container .clock .dot:before {
   content: "";
   width: 10px;
@@ -81,6 +90,7 @@ html body {
   position: absolute;
   filter: blur(2px);
 }
+
 .containers .right {
   flex: 1;
   height: 100%;
@@ -89,6 +99,7 @@ html body {
   justify-content: center;
   align-items: center;
 }
+
 .containers .right .clock {
   width: 400px;
   height: 400px;
@@ -100,6 +111,7 @@ html body {
   align-items: center;
   position: relative;
 }
+
 .containers .right .clock .nut {
   position: absolute;
   width: 14px;
@@ -108,6 +120,7 @@ html body {
   background-color: #be3b25;
   z-index: 1000;
 }
+
 .containers .right .clock .hour,
 .containers .right .clock .min,
 .containers .right .clock .sec {
@@ -116,11 +129,13 @@ html body {
   justify-content: center;
   border-radius: 50%;
 }
+
 .containers .right .clock .hour {
   width: 160px;
   height: 160px;
   z-index: 10;
 }
+
 .containers .right .clock .hour:before {
   content: "";
   position: absolute;
@@ -129,11 +144,13 @@ html body {
   background: #ff105e;
   border-radius: 6px 6px 0 0;
 }
+
 .containers .right .clock .min {
   width: 190px;
   height: 190px;
   z-index: 11;
 }
+
 .containers .right .clock .min:before {
   content: "";
   position: absolute;
@@ -142,11 +159,13 @@ html body {
   background: #fff;
   border-radius: 6px 6px 0 0;
 }
+
 .containers .right .clock .sec {
   width: 230px;
   height: 230px;
   z-index: 12;
 }
+
 .containers .right .clock .sec:before {
   content: "";
   position: absolute;
@@ -155,6 +174,7 @@ html body {
   background: #2577d6;
   border-radius: 6px 6px 0 0;
 }
+
 .containers .right .clock .mark {
   position: absolute;
   width: 5px;
@@ -162,54 +182,68 @@ html body {
   border-radius: 50%;
   background-color: #be3b25;
 }
+
 .containers .right .clock .mark-1 {
   transform: translateY(-180px);
 }
+
 .containers .right .clock .mark-2 {
   transform: rotate(30deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-3 {
   transform: rotate(60deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-4 {
   width: 10px;
   height: 10px;
   transform: rotate(90deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-5 {
   transform: rotate(120deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-6 {
   transform: rotate(150deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-7 {
   width: 10px;
   height: 10px;
   transform: rotate(180deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-8 {
   transform: rotate(210deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-9 {
   transform: rotate(240deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-10 {
   width: 10px;
   height: 10px;
   transform: rotate(270deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-11 {
   transform: rotate(300deg) translateY(-180px);
 }
+
 .containers .right .clock .mark-12 {
   width: 10px;
   height: 10px;
   transform: rotate(330deg) translateY(-180px);
 }
+
 @keyframes Rotate {
   0% {
     transform: rotateZ(0deg);
   }
+
   100% {
     transform: rotateZ(360deg);
   }

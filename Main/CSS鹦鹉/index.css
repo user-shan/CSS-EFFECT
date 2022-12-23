@@ -1,6 +1,7 @@
 body {
   background: #74B2C9;
 }
+
 .box-canvas {
   position: relative;
   margin: auto;
@@ -10,6 +11,7 @@ body {
   width: 190px;
   height: 600px;
 }
+
 .box-canvas .head {
   position: absolute;
   left: 50px;
@@ -20,6 +22,7 @@ body {
   border: 1px solid #F73219;
   overflow: hidden;
 }
+
 .box-canvas .head::before {
   content: '';
   position: absolute;
@@ -29,6 +32,7 @@ body {
   border-radius: 50% 50% 50% 20%;
   bottom: 10px;
 }
+
 .box-canvas .head::after {
   content: '';
   position: absolute;
@@ -41,6 +45,7 @@ body {
   border: 8px solid black;
   border-radius: 50%;
 }
+
 .box-canvas .beak {
   position: absolute;
   transform: rotate(-10deg);
@@ -48,6 +53,7 @@ body {
   height: 30px;
   width: 60px;
 }
+
 .box-canvas .beak::before {
   content: '';
   position: absolute;
@@ -58,6 +64,7 @@ body {
   height: 15px;
   border-radius: 50% 0% 50% 50%;
 }
+
 .box-canvas .beak .beak-top {
   position: absolute;
   right: 0;
@@ -66,6 +73,7 @@ body {
   height: 25px;
   border-radius: 50% 30% 50% 50%;
 }
+
 .box-canvas .beak .beak-top::after {
   content: '';
   position: absolute;
@@ -77,6 +85,7 @@ body {
   box-shadow: -15px -15px 0 #F2D207;
   transform: rotate(20deg);
 }
+
 .box-canvas .body {
   position: absolute;
   left: 70px;
@@ -88,6 +97,7 @@ body {
   transform: rotate(-25deg);
   border-left: 2px solid #D12B19;
 }
+
 .box-canvas .body:after {
   content: '';
   position: absolute;
@@ -99,6 +109,7 @@ body {
   border-radius: 50% 30% 50% 10%;
   transform: skew(0deg, -20deg) rotate(-10deg);
 }
+
 .box-canvas .tail {
   content: '';
   position: absolute;
@@ -111,26 +122,31 @@ body {
   transform: rotate(-20deg);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
 }
+
 .box-canvas .left {
   transform: rotate(10deg);
   top: 190px;
   left: 95px;
 }
+
 .box-canvas .left::after {
   height: 30px;
   top: -20px;
 }
+
 .box-canvas .right {
   transform: rotate(10deg);
   top: 200px;
   left: 110px;
 }
+
 .box-canvas .leg {
   position: absolute;
   width: 8px;
   height: 35px;
   background: #F2D207;
 }
+
 .box-canvas .leg::after {
   content: '';
   position: absolute;
@@ -141,6 +157,7 @@ body {
   background: #F73219;
   clip-path: polygon(20% 100%, 80% 100%, 100% 0, 0 0);
 }
+
 .box-canvas .leg::before {
   content: '';
   position: absolute;
@@ -151,6 +168,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 -8px 0 #F2D207;
 }
+
 .box-canvas .branch {
   position: absolute;
   top: 232px;

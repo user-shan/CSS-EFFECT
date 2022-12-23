@@ -7,9 +7,11 @@ body {
   overflow: hidden;
   font-family: "Courier New", Courier, monospace;
 }
+
 .phone {
   transform: rotate(-30deg) skewX(30deg);
 }
+
 .phone-back {
   height: 734px;
   width: 430px;
@@ -22,6 +24,7 @@ body {
     inset 2px 0 4px -2px rgba(0, 0, 0, 0.6),
     inset 2px 0 1px -2px rgba(255, 255, 255, 0.1),
     inset 0 -15px 10px -10px rgba(255, 255, 255, 0.15);
+
   &:before {
     content: "";
     display: block;
@@ -36,6 +39,7 @@ body {
     opacity: 0.1;
     transform: rotate(4deg);
   }
+
   &:after {
     content: "";
     display: block;
@@ -51,6 +55,7 @@ body {
     transform: rotate(2deg);
   }
 }
+
 .phone-screen {
   position: absolute;
   display: flex;
@@ -64,18 +69,21 @@ body {
   border-radius: 48px 40px 52px 45px;
   box-shadow: -2px 0 0px -1px rgba(255, 255, 255, 0.4),
     -1px 3px 3px -3px rgba(255, 255, 255, 0.7);
+
   .display {
     width: 96%;
     height: 98%;
     border-radius: 48px 40px 52px 45px;
     background-color: #fff;
     position: relative;
+
     .banner {
       width: 100%;
       height: 140px;
       overflow: hidden;
       border-radius: 48px 40px 0 0;
     }
+
     .topbar {
       width: 100%-10px;
       padding: 10px 20px 0 20px;
@@ -86,8 +94,10 @@ body {
       top: 0;
       left: 0;
     }
+
     .firstline {
       display: flex;
+
       .avatar {
         width: 100px;
         height: 100px;
@@ -95,6 +105,7 @@ body {
         margin-top: -20px;
         margin-left: 10px;
       }
+
       .rightbase {
         flex: 1;
         display: flex;
@@ -102,6 +113,7 @@ body {
         justify-content: center;
         align-items: center;
         padding: 10px 10px 0 20px;
+
         .top {
           width: 100%;
           display: flex;
@@ -109,6 +121,7 @@ body {
           align-items: center;
           text-align: center;
         }
+
         .button {
           width: 80%;
           padding: 5px;
@@ -117,29 +130,35 @@ body {
           border-radius: 5px;
           border: 1px solid #fb7299;
           cursor: pointer;
+
           .iconfont {
             color: #fb7299;
           }
+
           .text {
             color: #fb7299;
           }
         }
       }
     }
+
     .namesex {
       margin-top: 20px;
       padding-left: 10px;
       display: flex;
       align-items: center;
+
       .name {
         font-size: 18px;
         color: #fb7299;
         margin-right: 10px;
         font-weight: bold;
       }
+
       .iconfont {
         color: #00a1d6;
       }
+
       .huiyuan {
         margin-left: 10px;
         padding: 0 10px;
@@ -148,8 +167,10 @@ body {
         border-radius: 3px;
       }
     }
+
     .exp {
       margin: 10px 0 0 10px;
+
       .exptop {
         .lv {
           background-color: #95ddb2;
@@ -157,6 +178,7 @@ body {
           font-weight: bold;
           border-radius: 2px 0 0 2px;
         }
+
         .lvnum {
           font-weight: bold;
           color: #fff;
@@ -165,12 +187,14 @@ body {
           background-color: #95ddb2;
         }
       }
+
       .expbar {
         margin-top: 10px;
         width: 100px;
         position: relative;
         height: 2px;
         background: #333;
+
         &:before {
           content: "";
           position: absolute;
@@ -183,16 +207,19 @@ body {
       }
     }
   }
+
   .detail {
     display: flex;
     padding: 0 10px;
     margin-top: 10px;
     justify-content: space-between;
     align-items: center;
+
     .detailbtn {
       color: #1389bf;
     }
   }
+
   .title {
     display: flex;
     justify-content: space-around;
@@ -201,9 +228,11 @@ body {
     padding: 10px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+
     .selected {
       color: #fb7299;
       position: relative;
+
       &:before {
         content: "";
         position: absolute;
@@ -215,37 +244,44 @@ body {
       }
     }
   }
+
   .header {
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
+
     .pic {
       width: 50px;
       height: 50px;
       border-radius: 50%;
     }
+
     .right {
       margin-left: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       .name {
         color: #fb7299;
         font-size: 16px;
         font-weight: bold;
       }
+
       .des {
         font-size: 12px;
         color: #666;
       }
     }
   }
+
   .category {
     margin: 10px 0 0 10px;
     color: #1389bf;
     font-size: 16px;
     font-weight: 500;
   }
+
   .fengmian {
     margin: 10px;
     width: 95%;
@@ -254,12 +290,14 @@ body {
     overflow: hidden;
   }
 }
+
 .phone-left-side {
   position: absolute;
   left: 0;
   top: 60px;
   width: 30px;
   height: 100%;
+
   .phone-antena {
     position: absolute;
     height: 20px;
@@ -270,6 +308,7 @@ body {
     transform: rotate(-40deg) skewX(20deg);
     background-color: transparent;
     box-shadow: 0px -2px 1px -2px #000;
+
     &:after {
       content: "";
       display: block;
@@ -284,11 +323,13 @@ body {
       box-shadow: 0px -2px 1px -2px #000;
     }
   }
+
   .phone-antena.bottom {
     top: auto;
     bottom: 128px;
   }
 }
+
 .phone-button {
   position: absolute;
   top: 100px;
@@ -300,6 +341,7 @@ body {
   transform: skewY(-40deg);
   box-shadow: -32px -16px 10px 0 rgba(0, 0, 0, 0.4),
     -4px 0 4px 0 rgba(0, 0, 0, 0.4);
+
   &:before {
     content: "";
     display: block;
@@ -309,6 +351,7 @@ body {
     background-image: linear-gradient(to bottom, #6a6b6f 85%, #0b0b0b);
     border-radius: 20px;
   }
+
   &:after {
     content: "";
     display: block;
@@ -322,9 +365,11 @@ body {
     box-shadow: inset -1px -1px 0 -1px rgba(255, 255, 255, 0.6);
   }
 }
+
 .phone-button.bottom {
   top: 160px;
 }
+
 .phone-button.top {
   top: 48px;
   height: 29px;
@@ -332,12 +377,14 @@ body {
   left: 2px;
   border-radius: 10px 10px 10px 3px;
   box-shadow: inset 2px 0 0 -1px rgba(255, 255, 255, 0.25);
+
   &:after {
     height: 27px;
     width: 8px;
     left: -1px;
     top: 0px;
   }
+
   &:before {
     height: 28px;
     width: 8px;
@@ -346,16 +393,19 @@ body {
     box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.4);
   }
 }
+
 .phone-bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
+
   .bottom-speaker {
     position: absolute;
     display: flex;
     left: calc(50% - 120px);
     bottom: 6px;
     transform: skewX(-50deg);
+
     div {
       height: 6px;
       width: 6px;
@@ -366,6 +416,7 @@ body {
       border-radius: 50%;
       position: relative;
       overflow: hidden;
+
       &:after {
         content: "";
         display: block;
@@ -380,23 +431,24 @@ body {
       }
     }
   }
+
   .bottom-speaker.right {
     left: calc(50% + 45px);
   }
+
   .phone-screw {
     position: absolute;
     bottom: 5px;
     left: calc(50% - 38px);
     height: 9px;
     width: 9px;
-    background-image: linear-gradient(
-      to right,
-      #1a1a1c 30%,
-      #a1a2a7 60%,
-      #1a1a1c 80%
-    );
+    background-image: linear-gradient(to right,
+        #1a1a1c 30%,
+        #a1a2a7 60%,
+        #1a1a1c 80%);
     border-radius: 50%;
     transform: translateX(-50%) skewX(-50deg);
+
     div {
       height: 6px;
       width: 6px;
@@ -404,6 +456,7 @@ body {
       background-color: #252527;
       box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.9), inset -2px 1px 1px -1px #000;
       position: relative;
+
       &:after {
         content: "";
         display: block;
@@ -417,21 +470,21 @@ body {
       }
     }
   }
+
   .phone-screw.right {
     left: calc(50% + 36px);
   }
+
   .phone-charger {
     position: absolute;
     left: 50%;
     bottom: 2px;
-    background-image: linear-gradient(
-      to right,
-      #121214 5%,
-      #434446 20%,
-      #434446 60%,
-      #7a7b80 75%,
-      #1b1b1d 90%
-    );
+    background-image: linear-gradient(to right,
+        #121214 5%,
+        #434446 20%,
+        #434446 60%,
+        #7a7b80 75%,
+        #1b1b1d 90%);
     transform: translateX(-50%) skewX(-50deg);
     height: 14px;
     width: 48px;
@@ -440,6 +493,7 @@ body {
     box-shadow: 1px 1px 1px -1px rgba(255, 255, 255, 0.4),
       inset -2px -2px 0 -1px #0e0e0e, inset -3px -3px 0 -1px #252527,
       inset 3px 3px 0 -1px #050505;
+
     &:after {
       content: "";
       display: block;
@@ -450,6 +504,7 @@ body {
       box-shadow: 1px 1px 0 -1px rgba(255, 255, 255, 0.4);
     }
   }
+
   .phone-antena {
     position: absolute;
     height: 20px;
@@ -461,6 +516,7 @@ body {
     transform: rotate(-45deg) skewX(20deg) scaleY(-1);
     background-color: transparent;
     box-shadow: 0px -2px 1px -2px #000;
+
     &:after {
       content: "";
       display: block;
@@ -475,11 +531,13 @@ body {
       box-shadow: 0px -2px 1px -2px #000;
     }
   }
+
   .phone-antena.right {
     left: auto;
     right: 70px;
     box-shadow: 0px -2px 1px -2px #000,
       19px -2px 0 -2px rgba(255, 255, 255, 0.4);
+
     &:after {
       box-shadow: 0px -2px 1px -2px #000,
         19px -2px 0 -2px rgba(255, 255, 255, 0.4);

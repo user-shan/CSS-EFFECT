@@ -1,15 +1,18 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
   margin: 40px;
   background-color: #1d212b;
 }
+
 .receipt {
   padding-top: 150px;
   width: 300px;
@@ -17,6 +20,7 @@ body {
   margin: auto;
   position: relative;
 }
+
 .receipt__half {
   display: flex;
   flex-direction: column;
@@ -27,6 +31,7 @@ body {
   background: white;
   perspective: 1000px;
 }
+
 .receipt__half::after {
   content: "";
   display: block;
@@ -38,9 +43,11 @@ body {
   transition: all 0.8s ease;
   transition-delay: 0.35s;
 }
+
 .active .receipt__half::after {
   transition-delay: 0s;
 }
+
 .upper {
   z-index: 10;
   width: 100%;
@@ -48,49 +55,60 @@ body {
   border-radius: 5px 5px 0 0;
   background-image: url("https://y.gtimg.cn/music/photo_new/T002R300x300M000000LfSb70Ewn3w_1.jpg");
 }
+
 .upper::after {
   top: 100%;
   background: #f7f7f7;
   transform: rotate3d(1, 0, 0, -90deg);
   transform-origin: top center;
 }
+
 .active .upper::after {
   background: white;
   transform: rotate3d(1, 0, 0, 0deg);
 }
+
 .lower {
   transition: transform 0.8s ease;
   transition-delay: 0.35s;
   border-radius: 0 0 5px 5px;
 }
+
 .lower::after {
   bottom: 100%;
   background: #ebebeb;
   transform: rotate3d(1, 0, 0, 90deg);
   transform-origin: bottom center;
 }
+
 .active .lower {
   border-top: none;
   transform: translateY(100px);
   transition-delay: 0s;
 }
+
 .active .lower::after {
   background: white;
   transform: rotate3d(1, 0, 0, 0deg);
 }
+
 h1 {
   margin: 10px 0 20px;
 }
+
 h1.page-title {
   text-align: center;
   margin-bottom: 60px;
 }
+
 p {
   margin: 0;
 }
+
 p.sm {
   font-size: 80%;
 }
+
 button {
   width: 100%;
   padding: 15px 20px;
@@ -103,9 +121,11 @@ button {
   cursor: pointer;
   transition: all ease 0.35s;
 }
+
 button:hover {
   color: #484848;
 }
+
 .receipt__content {
   display: flex;
   align-items: center;
@@ -122,14 +142,17 @@ button:hover {
   transition: opacity ease 0.35s, transform ease 0.35s;
   transition-delay: 0s;
 }
+
 .active .receipt__content {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.8s;
 }
+
 table {
   width: 100%;
 }
+
 tr {
   display: flex;
   justify-content: space-between;

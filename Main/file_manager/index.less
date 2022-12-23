@@ -1,5 +1,6 @@
 // 引入 Montserrat 字体
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,800&display=swap");
+
 * {
   // 初始 reset
   padding: 0;
@@ -9,6 +10,7 @@
   // 设置字体
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   width: 100vw;
   height: 100vh;
@@ -19,6 +21,7 @@ body {
   // 设置渐变的背景颜色
   background: linear-gradient(to bottom right, #272c46, #464c6d);
 }
+
 // 包含所有布局样式的容器
 .container {
   width: 480px;
@@ -27,6 +30,7 @@ body {
   // 设置一个渐变的背景颜色，用来模拟渐变边框
   background: linear-gradient(to bottom, #fba85c, rgba(251, 168, 92, 0.1));
   position: relative;
+
   // 设置一个稍小于容器的伪元素并居中，使得上面的背景颜色只露出四周一圈，从而达到渐变边框的效果
   &:after {
     content: "";
@@ -39,6 +43,7 @@ body {
     box-shadow: 26px 16px 35px rgba(0, 0, 0, 0.29);
     border-radius: 50px;
   }
+
   .top_bar {
     width: 100%;
     position: absolute;
@@ -47,6 +52,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
+
     // 返回按钮
     .back {
       width: 50px;
@@ -56,6 +62,7 @@ body {
         2px 2px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       position: relative;
+
       // 同样用到伪元素，达到双层的效果
       &:after {
         content: "";
@@ -70,11 +77,13 @@ body {
         z-index: 1;
         transition: all 0.6s;
       }
+
       // 当鼠标hover的时候，有一个向内凹陷的效果
       &:hover::after {
         box-shadow: inset -2px -2px 4px rgba(160, 160, 160, 0.25),
           inset 2px 2px 4px rgba(0, 0, 0, 0.25);
       }
+
       .fa {
         position: absolute;
         top: 13px;
@@ -85,6 +94,7 @@ body {
         cursor: pointer;
       }
     }
+
     .content {
       font-style: italic;
       font-size: 36px;
@@ -92,18 +102,18 @@ body {
       color: #8d92af;
       margin: 0 29px;
     }
+
     // menu 菜单，同样使用之前的方式做渐变边框
     .menu {
       width: 36px;
       height: 36px;
       border-radius: 12px;
-      background: linear-gradient(
-        to bottom right,
-        rgba(181, 103, 115, 1),
-        #000
-      );
+      background: linear-gradient(to bottom right,
+          rgba(181, 103, 115, 1),
+          #000);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       position: relative;
+
       &:after {
         content: "";
         position: absolute;
@@ -114,6 +124,7 @@ body {
         background: #454c70;
         border-radius: 12px;
       }
+
       .fa {
         position: absolute;
         top: 10px;
@@ -125,6 +136,7 @@ body {
       }
     }
   }
+
   // 搜索栏
   .search {
     position: absolute;
@@ -134,6 +146,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
+
     .input_out {
       position: relative;
       width: 413px;
@@ -142,6 +155,7 @@ body {
       box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.12),
         inset -1px -1px 2px rgba(171, 171, 171, 0.12);
       border-radius: 21px;
+
       // 使用after伪元素制作四周凹陷效果
       &:after {
         content: "";
@@ -155,6 +169,7 @@ body {
           -1px -1px 1px rgba(170, 170, 170, 0.12);
         border-radius: 18px;
       }
+
       // 使用before伪元素制作渐变边框填充四周凹陷区域
       &:before {
         content: "";
@@ -163,13 +178,12 @@ body {
         height: 70px;
         top: 0;
         left: 0;
-        background: linear-gradient(
-          to right,
-          rgba(83, 96, 215, 1),
-          rgba(0, 0, 0, 0)
-        );
+        background: linear-gradient(to right,
+            rgba(83, 96, 215, 1),
+            rgba(0, 0, 0, 0));
         border-radius: 18px;
       }
+
       .fa {
         position: absolute;
         font-size: 24px;
@@ -179,6 +193,7 @@ body {
         z-index: 2;
       }
     }
+
     // 真正的输入栏
     .input {
       width: 407px;
@@ -193,6 +208,7 @@ body {
       background-color: transparent;
     }
   }
+
   .files {
     position: absolute;
     top: 249px;
@@ -202,6 +218,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     z-index: 1;
+
     .file_pupple {
       width: 184px;
       height: 154px;
@@ -214,6 +231,7 @@ body {
       flex-direction: column;
       justify-content: center;
     }
+
     .file_orange {
       width: 184px;
       height: 154px;
@@ -224,6 +242,7 @@ body {
       flex-direction: column;
       justify-content: center;
     }
+
     .file_icon_container {
       width: 39px;
       height: 39px;
@@ -235,12 +254,14 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+
       .file_icon {
         width: 15px;
         height: 19px;
         background-size: cover;
         background-image: url(./svg/file_icon_orange.svg);
       }
+
       .file_icon_blue {
         width: 15px;
         height: 19px;
@@ -248,6 +269,7 @@ body {
         background-image: url(./svg/file_icon_blue.svg);
       }
     }
+
     .name {
       margin-top: 10px;
       font-weight: 600;
@@ -255,12 +277,14 @@ body {
       line-height: 21px;
       color: #9da1bf;
     }
+
     .folder {
       font-size: 12px;
       line-height: 14px;
       color: #747999;
     }
   }
+
   // 进度条
   .progress {
     position: absolute;
@@ -271,6 +295,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     z-index: 1;
+
     .left {
       position: relative;
       width: 192px;
@@ -278,6 +303,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+
       // 使用多个div分别制作圆形和进度条的圆环
       .circle1 {
         position: absolute;
@@ -288,6 +314,7 @@ body {
           inset 2px 2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50%;
       }
+
       .circle2 {
         position: absolute;
         width: 187px;
@@ -297,6 +324,7 @@ body {
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
           -2px -2px 2px rgba(149, 144, 144, 0.25);
       }
+
       .circle4 {
         position: absolute;
         border-radius: 50%;
@@ -306,6 +334,7 @@ body {
         box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25),
           -2px -2px 1px rgba(82, 88, 129, 0.2);
       }
+
       .circle3 {
         position: absolute;
         border-radius: 50%;
@@ -315,6 +344,7 @@ body {
         box-shadow: inset -2px -2px 1px rgba(134, 134, 134, 0.25),
           inset 2px 2px 1px rgba(0, 0, 0, 0.25);
       }
+
       .circle5 {
         position: absolute;
         border-radius: 50%;
@@ -324,6 +354,7 @@ body {
         // 通过clip-path来制作填充圆环（之前的视频说过这个属性）
         clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
       }
+
       .circle6 {
         position: absolute;
         width: 192px;
@@ -333,6 +364,7 @@ body {
         transform: rotate(60deg);
         clip-path: polygon(50% 0%, 100% 0%, 100% 3600%, 50% 50%);
       }
+
       .circle7 {
         position: absolute;
         width: 54px;
@@ -343,22 +375,28 @@ body {
           -2px -3px 4px rgba(255, 255, 255, 0.25);
       }
     }
+
     .right {
       display: flex;
       flex-direction: column;
+
       .margin {
         margin-top: 40px;
       }
+
       .used {
         font-size: 14px;
         line-height: 16px;
         color: #9da1bf;
       }
+
       .line {
         display: flex;
         align-items: center;
+
         .toggle {
           margin-right: 6px;
+
           .big {
             display: flex;
             justify-content: center;
@@ -368,16 +406,19 @@ body {
             border-radius: 50%;
             background: #e5777a;
           }
+
           .small {
             width: 5px;
             height: 5px;
             border-radius: 50%;
             background: #3b486a;
           }
+
           .blue {
             background: #47affd;
           }
         }
+
         .text {
           font-size: 18px;
           line-height: 21px;
@@ -386,6 +427,7 @@ body {
       }
     }
   }
+
   // item 制作思路和上面的大体一致
   .items {
     position: absolute;
@@ -397,6 +439,7 @@ body {
     justify-content: space-evenly;
     z-index: 1;
     overflow: hidden;
+
     .item {
       width: 414px;
       height: 108px;
@@ -406,6 +449,7 @@ body {
       margin-top: 34px;
       display: flex;
       align-items: center;
+
       &:after {
         content: "";
         position: absolute;
@@ -418,6 +462,7 @@ body {
         cursor: pointer;
         z-index: 1;
       }
+
       .icon_container {
         margin-left: 26px;
         display: flex;
@@ -430,6 +475,7 @@ body {
         box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25),
           -3px -2px 20px rgba(255, 255, 255, 0.25);
         border-radius: 13px;
+
         .icon {
           width: 18px;
           height: 18px;
@@ -437,23 +483,27 @@ body {
           background-image: url("./svg/image_icon.svg");
         }
       }
+
       .item_text {
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 24px;
+
         .item_name {
           font-size: 24px;
           line-height: 28px;
           color: #9da1bf;
         }
+
         .num_item {
           font-size: 14px;
           line-height: 16px;
           color: #747999;
         }
       }
+
       .fa {
         z-index: 2;
         position: absolute;
@@ -462,24 +512,24 @@ body {
         color: #fff;
       }
     }
+
     .item1 {
-      background: linear-gradient(
-        to right,
-        rgba(166, 123, 96, 1),
-        rgba(80, 87, 127, 1)
-      );
+      background: linear-gradient(to right,
+          rgba(166, 123, 96, 1),
+          rgba(80, 87, 127, 1));
       transition: all 0.6s;
+
       &:hover {
         background: rgba(166, 123, 96, 1);
       }
     }
+
     .item2 {
-      background: linear-gradient(
-        to right,
-        rgba(73, 131, 190, 1),
-        rgba(80, 87, 127, 1)
-      );
+      background: linear-gradient(to right,
+          rgba(73, 131, 190, 1),
+          rgba(80, 87, 127, 1));
       transition: all 0.6s;
+
       &:hover {
         background: rgba(73, 131, 190, 1);
       }

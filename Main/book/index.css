@@ -1,18 +1,22 @@
 * {
   box-sizing: border-box;
 }
+
 :before {
   box-sizing: border-box;
 }
+
 :after {
   box-sizing: border-box;
 }
+
 body {
   background: radial-gradient(ellipse at center, #3b3b3b 0%, #1b1b1b 100%);
   color: #e5e5e5;
   font: 16px/1.25 "Crimson Text", sans-serif;
   margin: 0;
 }
+
 #wrapper {
   width: 100vw;
   height: 100vh;
@@ -20,10 +24,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #container {
   width: 900px;
   height: 700px;
 }
+
 .open-book {
   width: 100%;
   height: 100%;
@@ -35,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .open-book:before {
   background: linear-gradient(to bottom, #8b4513, #a35015);
   border-radius: 5px;
@@ -46,6 +53,7 @@ body {
   top: -15px;
   z-index: -1;
 }
+
 .open-book:after {
   background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 46%, rgba(0, 0, 0, 0.5) 49%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.5) 51%, rgba(0, 0, 0, 0.2) 52%, transparent 100%);
   bottom: -15px;
@@ -57,31 +65,38 @@ body {
   width: 60px;
   z-index: 1;
 }
-.open-book > * {
+
+.open-book>* {
   column-count: 2;
   column-gap: 6em;
   position: relative;
   z-index: 1;
 }
+
 .open-book .article {
   padding: 10px;
   flex: 1;
 }
+
 .open-book .article p {
   font-weight: lighter;
   letter-spacing: 1.1px;
 }
+
 .open-book .header {
   display: flex;
   justify-content: space-between;
 }
+
 .open-book .header * {
   margin: 0;
 }
+
 .open-book .header div {
   color: #aaa;
   font-size: 12px;
 }
+
 .open-book .header:before {
   background: #fff;
   border-radius: 25%;
@@ -97,6 +112,7 @@ body {
   right: 50%;
   transform: rotate(-2deg);
 }
+
 .open-book .header:after {
   background: #fff;
   border-radius: 25%;
@@ -112,12 +128,15 @@ body {
   left: 50%;
   transform: rotate(2deg);
 }
-.open-book .header > *:last-child {
+
+.open-book .header>*:last-child {
   text-align: right;
 }
+
 .open-book .footer * {
   margin: 0;
 }
+
 .open-book .footer #page-numbers {
   list-style: none;
   padding: 0;
@@ -125,9 +144,11 @@ body {
   color: #aaa;
   font-size: 12px;
 }
-.open-book .footer #page-numbers > div:last-child {
+
+.open-book .footer #page-numbers>div:last-child {
   text-align: right;
 }
+
 .open-book .footer:before {
   background: #fff;
   border-radius: 25%;
@@ -143,6 +164,7 @@ body {
   bottom: -15px;
   transform: rotate(2deg);
 }
+
 .open-book .footer:after {
   background: #fff;
   border-radius: 25%;
@@ -158,6 +180,7 @@ body {
   bottom: -15px;
   transform: rotate(-2deg);
 }
-.open-book .footer > *:last-child {
+
+.open-book .footer>*:last-child {
   text-align: right;
 }

@@ -8,12 +8,14 @@ body {
   font-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .splitview {
   position: relative;
   width: 100%;
   min-height: 45vw;
   overflow: hidden;
 }
+
 .panel {
   position: absolute;
   width: 100vw;

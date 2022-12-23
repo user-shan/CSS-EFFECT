@@ -4,6 +4,7 @@ html body {
   background-color: #93c7d0;
   font-family: Helvetica, sans-serif;
 }
+
 .container {
   min-width: 100vw;
   width: 100%;
@@ -13,6 +14,7 @@ html body {
   justify-content: center;
   align-items: center;
 }
+
 .container .page {
   display: flex;
   justify-content: center;
@@ -25,21 +27,25 @@ html body {
   background: #e3e6ec;
   background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .container .page .top {
   width: 375px;
   height: 568px;
   background-image: linear-gradient(0deg, rgba(67, 216, 205, 0.01) 2%, rgba(47, 185, 202, 0.3) 100%);
 }
+
 .container .page .top .title {
   padding: 40px 36px 0 36px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .container .page .top .title .left {
   display: flex;
   flex-direction: column;
 }
+
 .container .page .top .title .left .text {
   color: rgba(0, 0, 0, 0.87);
   font-weight: bold;
@@ -47,16 +53,20 @@ html body {
   letter-spacing: 0.54px;
   line-height: 18px;
 }
+
 .container .page .top .title .left .sub {
   display: flex;
   margin-top: 5px;
 }
+
 .container .page .top .title .left .sub .flag {
   position: relative;
 }
+
 .container .page .top .title .left .sub .flag .ellipse {
   position: absolute;
 }
+
 .container .page .top .title .left .sub .flag .ellipse1 {
   width: 14px;
   height: 14px;
@@ -64,6 +74,7 @@ html body {
   background: #2fb9ca;
   opacity: 0.2;
 }
+
 .container .page .top .title .left .sub .flag .ellipse2 {
   width: 14px;
   height: 14px;
@@ -71,6 +82,7 @@ html body {
   border-radius: 7px;
   border: 1px solid #2fb9ca;
 }
+
 .container .page .top .title .left .sub .flag .ellipse3 {
   width: 6px;
   top: 4px;
@@ -81,6 +93,7 @@ html body {
   border-radius: 3px;
   background: #2fb9ca;
 }
+
 .container .page .top .title .left .sub .flag .ellipse4 {
   width: 6px;
   top: 4px;
@@ -90,6 +103,7 @@ html body {
   border-radius: 3px;
   background: #2fb9ca;
 }
+
 .container .page .top .title .left .sub .subtext {
   margin-left: 20px;
   color: #959eb0;
@@ -97,18 +111,22 @@ html body {
   letter-spacing: 0.6px;
   line-height: 12px;
 }
+
 .container .page .top .title .iconfont {
   font-size: 36px;
 }
+
 .container .page .top .treat-time-container {
   margin-top: 80px;
 }
+
 .container .page .top .treat-time-container .treat-time {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
+
 .container .page .top .treat-time-container .treat-time .inner-circle {
   display: flex;
   justify-content: center;
@@ -122,6 +140,7 @@ html body {
   background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   box-shadow: -10px -10px 30px 0 #ffffff, 10px 10px 30px 0 rgba(48, 161, 178, 0.4), inset 1px 1px 0 0 #ffffff;
 }
+
 .container .page .top .treat-time-container .treat-time .inner-circle .treat-title {
   font-size: 12px;
   color: #000000;
@@ -130,6 +149,7 @@ html body {
   line-height: 12px;
   margin-bottom: 6px;
 }
+
 .container .page .top .treat-time-container .treat-time .inner-circle .time {
   font-size: 36px;
   color: #000000;
@@ -137,6 +157,7 @@ html body {
   text-align: center;
   line-height: 36px;
 }
+
 .container .page .top .treat-time-container .treat-time .circle1 {
   transform: rotateZ(60deg);
   width: 250px;
@@ -144,6 +165,7 @@ html body {
   background: conic-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30%, #2eb7c9 -240deg, #43d8cd 70%, #43d8cd 100%);
   border-radius: 125px;
 }
+
 .container .page .top .treat-time-container .treat-time .circle2 {
   width: 250px;
   height: 250px;
@@ -152,6 +174,7 @@ html body {
   background: rgba(46, 183, 201, 0.7);
   opacity: 0.1;
 }
+
 .container .page .top .treat-time-container .treat-time .circle3 {
   position: absolute;
   width: 270px;
@@ -159,6 +182,7 @@ html body {
   border-radius: 135px;
   border: 1px solid rgba(46, 183, 201, 0.6);
 }
+
 .container .page .top .treat-time-container .treat-time .circle4 {
   position: absolute;
   width: 270px;
@@ -166,6 +190,7 @@ html body {
   border-radius: 135px;
   border: 1px solid rgba(46, 183, 201, 0.5);
 }
+
 .container .page .top .treat-time-container .treat-time .circle5 {
   position: absolute;
   width: 290px;
@@ -173,6 +198,7 @@ html body {
   border-radius: 145px;
   border: 1px solid rgba(46, 183, 201, 0.4);
 }
+
 .container .page .top .treat-time-container .treat-time .circle6 {
   position: absolute;
   width: 310px;
@@ -180,6 +206,7 @@ html body {
   border-radius: 155px;
   border: 1px solid rgba(46, 183, 201, 0.3);
 }
+
 .container .page .top .treat-time-container .treat-time .circle7 {
   position: absolute;
   width: 330px;
@@ -187,6 +214,7 @@ html body {
   border-radius: 165px;
   border: 1px solid rgba(46, 183, 201, 0.2);
 }
+
 .container .page .top .comfort {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.87);
@@ -195,6 +223,7 @@ html body {
   line-height: 18px;
   margin-top: 80px;
 }
+
 .container .page .top .slider-container {
   display: flex;
   flex-direction: column;
@@ -202,6 +231,7 @@ html body {
   align-items: center;
   margin-top: 45px;
 }
+
 .container .page .top .slider-container .strength {
   font-size: 12px;
   color: #959eb0;
@@ -209,6 +239,7 @@ html body {
   text-align: center;
   line-height: 12px;
 }
+
 .container .page .top .slider-container .slider-outer {
   position: relative;
   display: flex;
@@ -222,6 +253,7 @@ html body {
   box-shadow: inset -10px -10px 20px 0 rgba(255, 255, 255, 0.8), inset 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 24px;
 }
+
 .container .page .top .slider-container .slider-outer .bg {
   width: 264px;
   height: 4px;
@@ -229,6 +261,7 @@ html body {
   border-radius: 3px;
   position: relative;
 }
+
 .container .page .top .slider-container .slider-outer .bg .left {
   position: absolute;
   width: 87px;
@@ -237,6 +270,7 @@ html body {
   background: #e3e6ec;
   background-image: linear-gradient(270deg, rgba(47, 185, 202, 0.97) 0%, rgba(67, 216, 205, 0.6) 100%);
 }
+
 .container .page .top .slider-container .slider-outer .thumb {
   position: absolute;
   display: flex;
@@ -251,6 +285,7 @@ html body {
   background-image: linear-gradient(179deg, rgba(255, 255, 255, 0) 0%, #e9e8f7 100%);
   box-shadow: 0 10px 30px 0 rgba(163, 176, 202, 0.2);
 }
+
 .container .page .top .slider-container .slider-outer .thumb .thumb-inner {
   width: 6px;
   height: 6px;
@@ -258,6 +293,7 @@ html body {
   border-radius: 3px;
   background-image: linear-gradient(180deg, rgba(47, 185, 202, 0.97) 0%, rgba(67, 216, 205, 0.6) 100%);
 }
+
 .container .page .top .slider-container .number {
   width: 256px;
   display: flex;
@@ -265,6 +301,7 @@ html body {
   align-items: center;
   margin-top: 15px;
 }
+
 .container .page .top .slider-container .number .number-text {
   font-size: 12px;
   color: #959eb0;
@@ -272,15 +309,18 @@ html body {
   text-align: center;
   line-height: 12px;
 }
+
 .container .page .top .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 37px;
 }
+
 .container .page .top .button-container .pause {
   margin-right: 50px;
 }
+
 .container .page .top .button-container .button {
   display: flex;
   justify-content: center;
@@ -291,6 +331,7 @@ html body {
   background: #e3e6ec;
   box-shadow: -10px -10px 30px 0 #ffffff, 10px 10px 30px 0 rgba(166, 174, 189, 0.6);
 }
+
 .container .page .top .button-container .button .iconfont {
   font-size: 24px;
   color: #000;

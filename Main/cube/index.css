@@ -107,21 +107,27 @@ body {
   0% {
     transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
   }
+
   15% {
     transform: rotateZ(45deg) rotateX(45deg) rotateY(45deg);
   }
+
   30% {
     transform: rotateZ(45deg) rotateX(90deg) rotateY(90deg);
   }
+
   45% {
     transform: rotateZ(45deg) rotateX(135deg) rotateY(135deg);
   }
+
   60% {
     transform: rotateZ(45deg) rotateX(90deg) rotateY(180deg);
   }
+
   75% {
     transform: rotateZ(45deg) rotateX(45deg) rotateY(225deg);
   }
+
   100% {
     transform: rotateZ(45deg) rotateX(0deg) rotateY(270deg);
   }
